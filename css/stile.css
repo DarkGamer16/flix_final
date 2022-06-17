@@ -1,0 +1,313 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url(../imagens/constelacao_fundo.jpg);
+    background-size: 50%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#cabecalho { 
+    background-repeat: repeat;
+	box-sizing: border-box;
+	width: 100%;
+	height: 350px;
+
+	animation: fundo 60s infinite linear;
+	background-image: url(/imagens/filmes_capa/esse.jpg);
+	display: block;
+}
+
+@keyframes fundo {
+	to {
+		background-position: 2000px;
+
+	}
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#cabecalho nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.5s linear;
+    color: #fff;
+}
+
+#cabecalho #menu {
+    text-align: left;
+    font-size: 25px;
+}
+
+/* Exibe o submenu ao passar o mouse sobre o elemento pai */
+
+#cabecalho #menu li:hover ul {
+display: block;
+}
+
+/* Elemento do submenu */
+#cabecalho #menu li {
+display: inline-block;
+position: relative;
+}
+
+/* Submenu */
+#cabecalho #menu li ul {
+width: 100%;
+display: none;
+position: absolute;
+}
+
+/* Faz o li do elemento filho ficar um a baixo do outro (bloco) */
+#cabecalho #menu li ul li {
+display: block;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cabecalho #menu li a {
+display: block;
+transition: all 0.3s linear;
+/* Transição para o estado HOVER */
+}
+
+#cabecalho nav li a:hover{
+    background-color: rgba(2, 10, 122, 0.9);
+}
+
+#cabecalho #logo {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#animes {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#animes td img{
+	width: 150px;
+	border-radius: 25px;
+	display: block;
+	padding: 10px;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#animes img:hover{
+	transform: scale(1.1, 1.1);
+}
+
+#animes tr td{
+	text-align: center;
+	font-size: 16px;
+}
+
+
+
+/*corpo da pagina*/
+
+.imagens_animes img{
+	width: 200px;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.imagens_animes p{
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+}
+
+.imagens_animes h2{
+	margin: 20px;
+}
+
+#animes a{
+	color: rgb(255, 255, 255);
+}
+
+/*editando tabela de animes*/
+
+h2{
+	padding: 30px;
+	text-align: center;
+	color: #FFF;
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+
+ /*animacao zoom*/
+#animes td img{
+	width: 200px;
+	border-radius: 25px;
+	display: block;
+	padding: 10px;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#animes ul{
+    display: inline-flex;
+}
+
+#animes li img{
+	width: 200px;
+	border-radius: 25px;
+	display: block;
+	padding: 10px;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#animes img:hover{
+	transform: scale(1.1, 1.1);
+}
+
+#animes tr td{
+	text-align: center;
+	font-size: 20px;
+}
+
+/* Formatar rodapé */
+#rodape {
+	background-color: rgb(22, 22, 22, 0.4);
+	padding-top: 200px;
+}
+
+#rodape address {
+	font-style: normal;
+	text-align: center;
+	font-size: 12px;
+}
+#rodape p{
+	color: white;
+}
+
+#rodape h3{
+	color: white;
+}
+
+/*editando site de animes e eps*/
+
+
+#tabela_animes table{
+	margin: 0 auto;
+}
+
+.tabela_eps table{
+	margin: 0 auto;
+	padding: 30px;
+
+}
+
+.tabela_eps td{
+	display: block;
+}
+
+.tabela_eps a{
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.tabela_eps img{
+	border-radius: 20px;
+	padding: 10px;
+	width: 300px;
+}
+
+#cabecalho #player{ 
+    background-repeat: repeat;
+	box-sizing: border-box;
+	width: 100%;
+	height: 700px;
+    text-align: center;
+    margin-top: 30px;
+	animation: fundo 60s infinite linear;
+	background-image: url(/imagens/filmes_capa/esse.jpg);
+	display: block;
+}
+
+#animes1 li img{
+	width: 200px;
+	border-radius: 25px;
+	display: block;
+	padding: 10px;
+    margin-top: 50px;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.tabela_eps a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.tabela_eps a:hover{
+    text-decoration: underline;
+}
+
+.recepcao h2{
+    font-size: 40px;
+    
+}
+
+.recepcao img{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.recepcao p{
+    max-width: 300px;
+    color: #fff;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.video{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(67, 67, 71);
+    margin-top: 50px;
+}
+.iframe{
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+
+.tabela_eps img{
+    vertical-align: middle;
+    margin-right: 20px;
+}
